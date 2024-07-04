@@ -6,7 +6,6 @@ export const PopupSlice = createSlice({
     reducers: {
         setPopup: (state) => {
             state.value = !state.value;
-            console.log(state.value)
         }
     }
 });

@@ -21,7 +21,7 @@ export default function ArticleSlider() {
             <h2 className="font-bold text-xl underline mb-3 text-center ">Khatabook Blogs</h2>
 
             <div className=" flex flex-row  transition-all duration-300 gap-[5rem]" style={{ transform: `translateX(-${currentIndex === 9 ? currentIndex * 43 : currentIndex * 45}rem) ` }}>
-                {sliderCardData.map((Num) => <ArticleCards image={Num.image} title={Num.title} desc={Num.desc} readMoreLink={Num.readMoreLink}></ArticleCards>)}
+                {sliderCardData.map((Num, index) => <ArticleCards key={index} image={Num.image} title={Num.title} desc={Num.desc} readMoreLink={Num.readMoreLink}></ArticleCards>)}
 
             </div>
             <div className="flex flex-row justify-between text-4xl mt-5">
