@@ -1,4 +1,4 @@
-import { Logo } from "../Data/Logo";
+import { Logo } from "../../Data/Logo";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";

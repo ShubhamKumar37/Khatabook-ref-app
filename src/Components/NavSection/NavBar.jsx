@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { Logo } from "../Data/Logo";
+import { Logo } from "../../Data/Logo";
 import RightNavHome from "./RightNavHome";
 import RightNavLoan from "./RightNavLoan";
 

@@ -1,9 +1,9 @@
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import { Logo } from "../Data/Logo";
+import { Logo } from "../../Data/Logo";
 import { useSelector, useDispatch } from "react-redux";
-import { generateOTP } from "../Redux/Slices/OTPSlice";
-import { setMobile } from "../Redux/Slices/MobileSlice";
-import { setPopup } from "../Redux/Slices/PopupSlice";
+import { generateOTP } from "../../Redux/Slices/OTPSlice";
+import { setMobile } from "../../Redux/Slices/MobileSlice";
+import { setPopup } from "../../Redux/Slices/PopupSlice";
 
 export default function LoginForm() {
 

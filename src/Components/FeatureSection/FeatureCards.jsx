@@ -1,5 +1,5 @@
 import { FaCheck } from "react-icons/fa";
-import { featureSVG1 } from "../Data/Logo";
+import { featureSVG1 } from "../../Data/Logo";
 
 export default function FeatureCards({heading, desc, points})
 {

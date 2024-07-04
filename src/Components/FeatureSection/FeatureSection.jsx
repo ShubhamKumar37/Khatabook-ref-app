@@ -1,4 +1,4 @@
-import { featureSVG1, featureSVG2, featureSVG3 } from "../Data/Logo";
+import { featureSVG1, featureSVG2, featureSVG3 } from "../../Data/Logo";
 import FeatureCards from "./FeatureCards";
 import { FaCalendarAlt } from "react-icons/fa";
 import { CiCloudRainbow } from "react-icons/ci";

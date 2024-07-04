@@ -1,7 +1,7 @@
 import LeftHeroSection from "./LeftHeroSection";
 import LoginForm from "./LoginForm";
 import { useSelector } from "react-redux";
-import { bookLogo, bizLogo } from "../Data/Logo";
+import { bookLogo, bizLogo } from "../../Data/Logo";
 import { FaGooglePlay } from "react-icons/fa";
 import { FaAppStore } from "react-icons/fa6";
 

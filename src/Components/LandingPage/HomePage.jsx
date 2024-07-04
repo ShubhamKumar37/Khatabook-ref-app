@@ -1,8 +1,8 @@
-import FeatureSection from "./FeatureSection";
-import FooterSection from "./FooterSection";
-import HeroSection from "./HeroSection";
-import ArticleSlider from "./Slider/ArticleSlider";
-import StartKhataBook from "./StartKhataBook";
+import FeatureSection from "../FeatureSection/FeatureSection";
+import FooterSection from "../FooterSection/FooterSection";
+import HeroSection from "../HeroSection/HeroSection";
+import ArticleSlider from "../Slider/ArticleSlider";
+import StartKhataBook from "../FeatureSection/StartKhataBook";
 
 
 

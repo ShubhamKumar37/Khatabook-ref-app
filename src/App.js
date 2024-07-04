@@ -1,8 +1,8 @@
 
 import './App.css';
-import BusinessPage from './Components/BusinessPage';
-import HomePage from './Components/HomePage';
-import Navbar from './Components/NavBar';
+import BusinessPage from './Components/LoanSection/BusinessPage';
+import HomePage from './Components/LandingPage/HomePage';
+import Navbar from './Components/NavSection/NavBar';
 import { Routes, Route } from 'react-router-dom';
 
 

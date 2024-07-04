@@ -1,6 +1,6 @@
 import { FaPhone } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
-import { setPopup } from "../Redux/Slices/PopupSlice";
+import { setPopup } from "../../Redux/Slices/PopupSlice";
 import { useDispatch } from "react-redux";
 
 export default function RightNavHome() {
