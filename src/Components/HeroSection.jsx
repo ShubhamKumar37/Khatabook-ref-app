@@ -45,8 +45,8 @@ export default function HeroSection() {
 
                         </div>
                         <div className="flex justify-end gap-[1rem]">
-                            <a href="https://play.google.com/store/games?hl=en_US" target="_blank" className="flex"><FaGooglePlay />  Play Store</a>
-                            <a href="https://www.apple.com/app-store/" target="_blank" className="flex"><FaAppStore />  App Store</a>
+                            <a href="https://play.google.com/store/games?hl=en_US"className="flex"><FaGooglePlay />  Play Store</a>
+                            <a href="https://www.apple.com/app-store/" className="flex"><FaAppStore />  App Store</a>
                         </div>
 
                     </div>
@@ -56,7 +56,7 @@ export default function HeroSection() {
                     <div className="flex flex-col gap-4">
                         <h1 className="font-bold">Already use Tally? *</h1>
                         <p>Get Tally * on mobile with BizAnalyst</p>
-                        <a href="https://bizanalyst.in/?referrer=singular_click_id%3D79d6f21d-50ca-4854-8f67-d67df893b89d" target="_blank" className="text-blue-600">Go To BizAnalyst</a>
+                        <a href="https://bizanalyst.in/?referrer=singular_click_id%3D79d6f21d-50ca-4854-8f67-d67df893b89d" "_blank" className="text-blue-600">Go To BizAnalyst</a>
                     </div>
 
                     <div>{bizLogo}</div>

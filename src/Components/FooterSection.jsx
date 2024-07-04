@@ -37,7 +37,7 @@ const FooterSection = () => {
                         <h1 className="text-lg font-semibold">Khatabook is India’s largest business management platform.</h1>
                         <div className="flex space-x-4 mt-4">
                             {socialMediaButton.map((item, index) => (
-                                <a href={item} key={index} target="_blank" rel="noreferrer">
+                                <a href={item} key={index} rel="noreferrer">
                                     <img src={`social-media-icon-${index}.svg`} alt={`Social Media ${index}`} className="h-6 w-6" />
                                 </a>
                             ))}

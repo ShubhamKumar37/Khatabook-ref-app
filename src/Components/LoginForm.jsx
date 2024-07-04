@@ -52,10 +52,10 @@ export default function LoginForm() {
 
             <div className="text-center">
                 By proceeding, you agree to our
-                <a href="https://khatabook.com/terms" target="_blank" className="underline">
+                <a href="https://khatabook.com/terms"  className="underline">
                     Terms of Use
                 </a> and <br/>
-                <a href="https://khatabook.com/privacy" target="_blank" className="underline">Privacy Policy</a>
+                <a href="https://khatabook.com/privacy" className="underline">Privacy Policy</a>
             </div>
         </div>
     );

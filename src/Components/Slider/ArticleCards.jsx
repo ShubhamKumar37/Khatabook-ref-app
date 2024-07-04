@@ -14,7 +14,7 @@ export default function ArticleCards({image, title, desc, readMoreLink})
 
                 <h1 className="font-bold text-xl">{title}</h1>
 
-                <p>{desc} <a href={readMoreLink} target="_blank" className="text-blue-700 underline">Read More</a></p>
+                <p>{desc} <a href={readMoreLink} className="text-blue-700 underline">Read More</a></p>
             </div>
         </div>
     );
