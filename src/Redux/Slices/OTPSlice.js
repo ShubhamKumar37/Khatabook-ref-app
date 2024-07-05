@@ -4,7 +4,6 @@ export const OTPSlice = createSlice({
     name: 'OTP',
     initialState: {
         value: '',
-        correctOTP: false,
     },
     reducers: {
         generateOTP: (state, action) => {
@@ -26,23 +25,10 @@ export const OTPSlice = createSlice({
 
             }
         },
-        checkOTP: (state, action) => {
-            const enteredOTP = action.payload;
-            console.log("Entered OTP", typeof enteredOTP, enteredOTP);
-            console.log("Correct OTP", typeof state.value, state.value);
-            if (state.value.toString() === enteredOTP) {
-                state.correctOTP = true;
-                state.value = '';
-                // console.log(true);
-            }
-            else {
-                state.correctOTP = false;
-                // console.log(false);
-            }
-        }
+        
     },
 });
 
-export const { generateOTP, checkOTP } = OTPSlice.actions;
+export const { generateOTP } = OTPSlice.actions;
 
 export default OTPSlice.reducer;

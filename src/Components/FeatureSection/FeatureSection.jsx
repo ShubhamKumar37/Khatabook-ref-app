@@ -5,9 +5,7 @@ import { CiCloudRainbow } from "react-icons/ci";
 import { FaChartBar } from "react-icons/fa";
 import MoreFeatureCards from "./MoreFeatureCards";
 
-
-export default function FeatureSection()
-{
+export default function FeatureSection() {
     const cardsData = [
         {
             heading: "GST & Non-GST Bills",
@@ -17,7 +15,7 @@ export default function FeatureSection()
                 "Detailed sales and purchase reports",
                 "No double-entry across khata and cashbook",
             ],
-            svg:{featureSVG1}
+            svg: featureSVG1 // Corrected svg property
         },
         {
             heading: "Inventory Management",
@@ -27,7 +25,7 @@ export default function FeatureSection()
                 "Low stock tracking",
                 "Profit tracking at daily, weekly and monthly level",
             ],
-            svg:{featureSVG2}
+            svg: featureSVG2 // Corrected svg property
         },
         {
             heading: "Business management on the go",
@@ -36,7 +34,7 @@ export default function FeatureSection()
                 "Data synced across mobile and desktop devices",
                 "Use Khatabook in both online and offline mode (Coming Soon)",
             ],
-            svg:{featureSVG3}
+            svg: featureSVG3 // Corrected svg property
         },
     ];
 
@@ -56,25 +54,20 @@ export default function FeatureSection()
             desc: "Get all GST reports & other insights to run your business efficiently.",
             icon: <FaChartBar />
         },
-    ]
+    ];
 
     return (
         <div className="max-w-[1080px] mx-auto relative flex flex-col mt-[4rem]">
             <div className="flex flex-col gap-[4rem] items-center">
-                <h3 className="font-bold text-red-400 ">POWERFUL FEATURES TO HELP YOU</h3>
-                <h1 className="text-center font-bold text-6xl">Built with features for<br/> growing businesses</h1>
+                <h3 className="font-bold text-red-400">POWERFUL FEATURES TO HELP YOU</h3>
+                <h1 className="text-center font-bold text-6xl">Built with features for<br /> growing businesses</h1>
             </div>
 
             {/* Feature Cards */}
             <div className="flex flex-col gap-7">
-                {
-                    cardsData.map((item, index) =>
-                    {
-                        return (
-                            <FeatureCards heading={item.heading} desc={item.desc} svg={item.svg} points={item.points}/>
-                        );
-                    })
-                }
+                {cardsData.map((item, index) => (
+                    <FeatureCards key={index} heading={item.heading} desc={item.desc} svg={item.svg} points={item.points} />
+                ))}
             </div>
 
             {/* More Feature */}
@@ -82,12 +75,9 @@ export default function FeatureSection()
                 <h1 className="text-center font-bold text-xl opacity-80">AND THAT’S NOT ALL...</h1>
 
                 <div className="my-3 flex gap-[2rem]">
-                    {
-                        moreFeatureCardData.map((item, index) =>
-                        {
-                            return (<MoreFeatureCards heading={item.heading} desc={item.desc} icon={item.icon}></MoreFeatureCards>)
-                        })
-                    }
+                    {moreFeatureCardData.map((item, index) => (
+                        <MoreFeatureCards key={index} heading={item.heading} desc={item.desc} icon={item.icon} />
+                    ))}
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { generateOTP, checkOTP } from "../../Redux/Slices/OTPSlice";
+import { generateOTP } from "../../Redux/Slices/OTPSlice";
 import { setMobile } from "../../Redux/Slices/MobileSlice";
 import { setOTP } from "../../Redux/Slices/OTPInputSlice";
 import { useState } from "react";
@@ -8,11 +8,11 @@ import { useNavigate } from "react-router-dom";
 
 export default function OTPValidation() {
     const dispatch = useDispatch();
+    const Navigate = useNavigate();
     const mobileNumber = useSelector((state) => state.Mobile);
     const enteredOTP = useSelector((state) => state.OTPInput)
-    let correctOTP = useSelector((state) => state.OTP.correctOTP);
+    let correctOTP = useSelector((state) => state.OTP.value);
     const [flag, setFlag] = useState(false);
-    const Navigate = useNavigate();
 
     const handleMobileChange = (event) => {
         dispatch(setMobile(event.target.value));
@@ -24,17 +24,25 @@ export default function OTPValidation() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setFlag();
+        setFlag(true);
         dispatch(generateOTP(mobileNumber));
     };
 
+    const checkOTP = () => {
+
+        correctOTP = correctOTP.toString();
+        if (enteredOTP ===  correctOTP) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     const handleOTP = (event) => {
         event.preventDefault();
-
-        dispatch(checkOTP(enteredOTP));
-        console.log(correctOTP);
-
-        if (correctOTP === true) {
+        
+        if (checkOTP()) {
             alert("Your OTP is verified and now you are redirecting to home page again");
             setFlag(false);
             Navigate('/');
